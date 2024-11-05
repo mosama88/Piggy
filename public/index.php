@@ -1,11 +1,14 @@
 <?php
 
 
-ini_set('memory_limit', '255M');
+// ini_set('memory_limit', '255M');
 // echo ini_get('memory_limit');
 
+echo "<pre>";
+print_r($_SERVER);
+echo "</pre>";
 
-$pp  = include __DIR__  . "/../src/App/bootstrap.php";
+$app  = include __DIR__  . "/../src/App/bootstrap.php";
 
 
 
