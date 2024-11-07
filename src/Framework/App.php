@@ -10,12 +10,15 @@ class App
 {
 
 
-    private Router $router;
+    private Router $router;  //property
 
     public function __construct(){
-        $this->router = new Router();
+        $this->router = new Router();  //instance
     }
 
+    public function get(string $path){
+        $this->router->add('GET',$path);
+    }
 
     
     public function run()
